@@ -1,0 +1,6 @@
+SELECT * from `user`
+select name_of_project FROM `user` WHERE find_in_set(language_of_project,'java')
+SELECT list_of_contributors,COUNT(list_of_contributors) FROM `user`group by list_of_contributors having COUNT(list_of_contributors) > 1
+SELECT COUNT(language_of_project) FROM `user`
+SELECT name_of_project,count(name_of_project) FROM `user` WHERE name_of_user LIKE "deepali"
+SELECT name_of_user,name_of_project,language_of_project,branches_of_project,stars_by_user,forks_by_user,tags,list_of_contributors FROM `user` WHERE stars_by_user>1 and name_of_user LIKE "deepali"
